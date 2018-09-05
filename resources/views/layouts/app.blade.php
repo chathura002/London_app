@@ -21,6 +21,20 @@
             <!-- <li role="menuitem"><a href="./reservations.html">Reservations</a></li> -->
           </ul>
         </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu="tckp8q-dropdown-menu" role="menubar">
+            <li role="menuitem"><a href=""
+                                           onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                           Logout
+                                       </a>
+
+                                       <form id="logout-form" action="" method="POST" style="display: none;">
+                                           {{ csrf_field() }}
+                                       </form>
+                                       </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- End Top Bar -->
